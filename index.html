@@ -1,12 +1,12 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="pt-MZ">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Simulador MZ | Simulador de Importação de Carros para Moçambique</title>
-<meta name="description" content="Simulador gratuito de importação de carros para Moçambique. Estime direitos aduaneiros, IVA, frete, desalfandegamento e todos os custos.">
+<title>Simulador MZ | Simulador de ImportaÃ§Ã£o de Carros para MoÃ§ambique</title>
+<meta name="description" content="Simulador gratuito de importaÃ§Ã£o de carros para MoÃ§ambique. Estime direitos aduaneiros, IVA, frete, desalfandegamento e todos os custos.">
 <meta name="theme-color" content="#0d9488">
-<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🚗</text></svg>">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>ðŸš—</text></svg>">
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
 <style>
 :root{
@@ -155,7 +155,7 @@ html.dark .announce-box{background:linear-gradient(135deg,rgba(45,212,191,.06),r
 .plan-price{font-size:26px;font-weight:900;color:var(--ink);margin-bottom:14px}
 .plan-price small{font-size:12px;color:var(--muted);font-weight:600}
 .plan ul{list-style:none;padding:0;margin:0;font-size:12px;color:var(--muted);line-height:1.9}
-.plan ul li::before{content:"✓ ";color:var(--primary);font-weight:900}
+.plan ul li::before{content:"âœ“ ";color:var(--primary);font-weight:900}
 .announce-actions{display:flex;gap:12px;justify-content:center;flex-wrap:wrap}
 .btn-whatsapp{background:linear-gradient(135deg,#25D366,#128C7E);color:#fff;padding:14px 26px;border-radius:12px;font-weight:900;font-size:14px;box-shadow:0 10px 24px rgba(37,211,102,.35);transition:.2s}
 .btn-whatsapp:hover{transform:translateY(-2px);box-shadow:0 14px 30px rgba(37,211,102,.45)}
@@ -214,13 +214,13 @@ footer{border-top:1px solid var(--line);background:var(--card);color:var(--muted
 <body>
 <header>
 <div class="container navbar">
-<a class="logo" href="#"><div class="logo-mark">🚗</div><div>Simulador <span>MZ</span></div></a>
+<a class="logo" href="#"><div class="logo-mark">ðŸš—</div><div>Simulador <span>MZ</span></div></a>
 <nav>
 <a href="#simulador" data-i18n="nav_sim">Simulador</a>
 <a href="#como-funciona" data-i18n="nav_how">Como funciona</a>
 <a href="#parceiros" data-i18n="footer_partners">Parceiros</a>
 <div class="lang-switch"><button class="active" data-lang="pt">PT</button><button data-lang="en">EN</button></div>
-<button class="theme-btn" id="themeBtn" title="Alternar tema">🌙</button>
+<button class="theme-btn" id="themeBtn" title="Alternar tema">ðŸŒ™</button>
 <a class="nav-cta" href="#simulador" data-i18n="nav_cta">Simular agora</a>
 </nav>
 </div>
@@ -228,13 +228,13 @@ footer{border-top:1px solid var(--line);background:var(--card);color:var(--muted
 
 <section class="hero">
 <div class="container hero-content">
-<div class="badge" data-i18n="badge">🇲🇿 Feito para importações em Moçambique</div>
+<div class="badge" data-i18n="badge">ðŸ‡²ðŸ‡¿ Feito para importaÃ§Ãµes em MoÃ§ambique</div>
 <h1><span data-i18n="hero_h1a">Quanto vai custar</span> <em data-i18n="hero_h1b">importar o seu carro</em>?</h1>
-<p data-i18n="hero_p">Cole o link do anúncio (Beforward, SBT, etc.) e obtenha uma estimativa instantânea dos custos de importação para Moçambique.</p>
+<p data-i18n="hero_p">Cole o link do anÃºncio (Beforward, SBT, etc.) e obtenha uma estimativa instantÃ¢nea dos custos de importaÃ§Ã£o para MoÃ§ambique.</p>
 <div class="hero-points">
-<span data-i18n="p1">✓ Importar por link</span>
-<span data-i18n="p2">✓ Valores em MT e USD</span>
-<span data-i18n="p3">✓ Funciona no telemóvel</span>
+<span data-i18n="p1">âœ“ Importar por link</span>
+<span data-i18n="p2">âœ“ Valores em MT e USD</span>
+<span data-i18n="p3">âœ“ Funciona no telemÃ³vel</span>
 </div>
 </div>
 </section>
@@ -243,73 +243,73 @@ footer{border-top:1px solid var(--line);background:var(--card);color:var(--muted
 <div class="container layout">
 <section class="card">
 <div class="card-head">
-<div><h2 data-i18n="form_title">Dados do veículo</h2><div class="subtitle" data-i18n="form_sub">Cole um link ou preencha manualmente.</div></div>
-<div class="step" data-i18n="step">SIMULAÇÃO</div>
+<div><h2 data-i18n="form_title">Dados do veÃ­culo</h2><div class="subtitle" data-i18n="form_sub">Cole um link ou preencha manualmente.</div></div>
+<div class="step" data-i18n="step">SIMULAÃ‡ÃƒO</div>
 </div>
 
 <div class="import-box">
-<label data-i18n="import_lbl">🔗 Importar dados do anúncio</label>
+<label data-i18n="import_lbl">ðŸ”— Importar dados do anÃºncio</label>
 <div class="import-row">
 <input id="importUrl" type="url" placeholder="https://www.beforward.jp/... ou https://sbt.co.mz/...">
 <button id="importBtn" data-i18n="import_btn">Buscar dados</button>
 </div>
 <div class="import-status" id="importStatus"></div>
 <div class="import-preview" id="importPreview">
-<img id="previewImg" alt="Pré-visualização">
-<div class="info"><b id="previewTitle">—</b><span id="previewMeta">—</span></div>
+<img id="previewImg" alt="PrÃ©-visualizaÃ§Ã£o">
+<div class="info"><b id="previewTitle">â€”</b><span id="previewMeta">â€”</span></div>
 </div>
 </div>
 
 <div class="form-section">
-  <div class="section-title"><span class="section-icon">📋</span><span data-i18n="sec_vehicle">Dados do veículo</span></div>
+  <div class="section-title"><span class="section-icon">ðŸ“‹</span><span data-i18n="sec_vehicle">Dados do veÃ­culo</span></div>
   <div class="form-grid">
     <div><label for="brand" data-i18n="lbl_brand">Marca</label><input id="brand" placeholder="Ex.: Toyota"></div>
     <div><label for="model" data-i18n="lbl_model">Modelo</label><input id="model" placeholder="Ex.: Hilux"></div>
     <div><label for="year" data-i18n="lbl_year">Ano de fabrico</label><input id="year" type="number" value="2022"></div>
     <div><label for="cc" data-i18n="lbl_cc">Cilindrada (cc)</label><input id="cc" type="number" value="2500"></div>
-    <div><label for="fuel" data-i18n="lbl_fuel">Combustível</label><select id="fuel"><option value="gas" data-i18n="f_gas">Gasolina</option><option value="diesel" data-i18n="f_die">Diesel</option><option value="hybrid" data-i18n="f_hyb">Híbrido</option><option value="electric" data-i18n="f_ele">Elétrico</option></select></div>
-    <div><label for="type" data-i18n="lbl_type">Tipo de veículo</label><select id="type"><option value="light" data-i18n="t_lig">Ligeiro</option><option value="pickup" data-i18n="t_pic">Pickup</option><option value="suv" data-i18n="t_suv">SUV</option><option value="van" data-i18n="t_car">Carrinha</option><option value="moto" data-i18n="t_mot">Motociclo</option></select></div>
-    <div class="full"><label for="country" data-i18n="lbl_country">País de origem</label><select id="country"><option value="ZA" data-i18n="c_za">África do Sul</option><option value="JP" data-i18n="c_jp">Japão</option><option value="AE" data-i18n="c_ae">Emirados Árabes Unidos</option><option value="UK" data-i18n="c_uk">Reino Unido</option><option value="OT" data-i18n="c_ot">Outro</option></select></div>
+    <div><label for="fuel" data-i18n="lbl_fuel">CombustÃ­vel</label><select id="fuel"><option value="gas" data-i18n="f_gas">Gasolina</option><option value="diesel" data-i18n="f_die">Diesel</option><option value="hybrid" data-i18n="f_hyb">HÃ­brido</option><option value="electric" data-i18n="f_ele">ElÃ©trico</option></select></div>
+    <div><label for="type" data-i18n="lbl_type">Tipo de veÃ­culo</label><select id="type"><option value="light" data-i18n="t_lig">Ligeiro</option><option value="pickup" data-i18n="t_pic">Pickup</option><option value="suv" data-i18n="t_suv">SUV</option><option value="van" data-i18n="t_car">Carrinha</option><option value="moto" data-i18n="t_mot">Motociclo</option></select></div>
+    <div class="full"><label for="country" data-i18n="lbl_country">PaÃ­s de origem</label><select id="country"><option value="ZA" data-i18n="c_za">Ãfrica do Sul</option><option value="JP" data-i18n="c_jp">JapÃ£o</option><option value="AE" data-i18n="c_ae">Emirados Ãrabes Unidos</option><option value="UK" data-i18n="c_uk">Reino Unido</option><option value="OT" data-i18n="c_ot">Outro</option></select></div>
   </div>
 </div>
 
 <div class="form-section">
-  <div class="section-title"><span class="section-icon">💰</span><span data-i18n="sec_costs">Custos de importação</span></div>
+  <div class="section-title"><span class="section-icon">ðŸ’°</span><span data-i18n="sec_costs">Custos de importaÃ§Ã£o</span></div>
   <div class="form-grid">
-    <div><label for="price" data-i18n="lbl_price">Preço de compra</label><input id="price" type="number" value="10000"></div>
-    <div><label for="currency" data-i18n="lbl_cur">Moeda do preço</label><select id="currency"><option value="USD">USD — Dólar</option><option value="ZAR">ZAR — Rand</option><option value="EUR">EUR — Euro</option><option value="MZN">MZN — Metical</option></select></div>
+    <div><label for="price" data-i18n="lbl_price">PreÃ§o de compra</label><input id="price" type="number" value="10000"></div>
+    <div><label for="currency" data-i18n="lbl_cur">Moeda do preÃ§o</label><select id="currency"><option value="USD">USD â€” DÃ³lar</option><option value="ZAR">ZAR â€” Rand</option><option value="EUR">EUR â€” Euro</option><option value="MZN">MZN â€” Metical</option></select></div>
     <div><label for="freight" data-i18n="lbl_freight">Frete (USD)</label><input id="freight" type="number" value="1500"></div>
     <div><label for="insurance" data-i18n="lbl_ins">Seguro (USD)</label><input id="insurance" type="number" value="150"></div>
     <div><label for="other" data-i18n="lbl_other">Outros custos (USD)</label><input id="other" type="number" value="300"></div>
-    <div><label for="rate" data-i18n="lbl_rate">Taxa USD → MZN</label><input id="rate" type="number" step="0.01" value="63"></div>
+    <div><label for="rate" data-i18n="lbl_rate">Taxa USD â†’ MZN</label><input id="rate" type="number" step="0.01" value="63"></div>
   </div>
 </div>
 
 <div class="form-section">
-  <div class="section-title"><span class="section-icon">🚢</span><span data-i18n="sec_port">Porto e logística</span></div>
+  <div class="section-title"><span class="section-icon">ðŸš¢</span><span data-i18n="sec_port">Porto e logÃ­stica</span></div>
   <div class="form-grid">
-    <div class="full"><label for="port" data-i18n="lbl_port">Porto / fronteira de entrada</label><select id="port"></select><div class="help" data-i18n="lbl_port_help">Escolha por onde vai entrar o veículo em Moçambique.</div></div>
+    <div class="full"><label for="port" data-i18n="lbl_port">Porto / fronteira de entrada</label><select id="port"></select><div class="help" data-i18n="lbl_port_help">Escolha por onde vai entrar o veÃ­culo em MoÃ§ambique.</div></div>
   </div>
 </div>
 
 <div class="form-section">
-  <div class="section-title"><span class="section-icon">📑</span><span data-i18n="sec_local">Custos locais (Moçambique)</span></div>
+  <div class="section-title"><span class="section-icon">ðŸ“‘</span><span data-i18n="sec_local">Custos locais (MoÃ§ambique)</span></div>
   <div class="form-grid">
     <div><label for="clearance" data-i18n="lbl_clear">Desalfandegamento (MT)</label><input id="clearance" type="number" value="5000"></div>
-    <div><label for="plate" data-i18n="lbl_plate">Chapa de matrícula (par) — MT</label><input id="plate" type="number" value="1500"></div>
-    <div><label for="radio" data-i18n="lbl_radio">Taxa de rádio (MT/ano)</label><input id="radio" type="number" value="500"></div>
+    <div><label for="plate" data-i18n="lbl_plate">Chapa de matrÃ­cula (par) â€” MT</label><input id="plate" type="number" value="1500"></div>
+    <div><label for="radio" data-i18n="lbl_radio">Taxa de rÃ¡dio (MT/ano)</label><input id="radio" type="number" value="500"></div>
     <div><label for="municipal" data-i18n="lbl_mun">Taxa municipal (MT/ano)</label><input id="municipal" type="number" value="2000"></div>
-    <div><label for="parking" data-i18n="lbl_park">Parqueamento (MT/mês)</label><input id="parking" type="number" value="800"></div>
+    <div><label for="parking" data-i18n="lbl_park">Parqueamento (MT/mÃªs)</label><input id="parking" type="number" value="800"></div>
     <div><label for="months" data-i18n="lbl_months">Meses de parqueamento</label><input id="months" type="number" value="12"></div>
   </div>
 </div>
 
 <button class="primary" onclick="calculate()" data-i18n="btn_calc">Calcular custo estimado</button>
 <div class="actions">
-<button class="secondary" onclick="resetForm()" data-i18n="btn_new">↺ Nova simulação</button>
-<button class="secondary" onclick="window.print()" data-i18n="btn_print">▣ Imprimir</button>
-<button class="secondary" onclick="exportPDF()" data-i18n="btn_pdf">📄 PDF</button>
-<button class="secondary whatsapp-btn" onclick="shareWhatsApp()" data-i18n="btn_share">📱 Partilhar</button>
+<button class="secondary" onclick="resetForm()" data-i18n="btn_new">â†º Nova simulaÃ§Ã£o</button>
+<button class="secondary" onclick="window.print()" data-i18n="btn_print">â–£ Imprimir</button>
+<button class="secondary" onclick="exportPDF()" data-i18n="btn_pdf">ðŸ“„ PDF</button>
+<button class="secondary whatsapp-btn" onclick="shareWhatsApp()" data-i18n="btn_share">ðŸ“± Partilhar</button>
 </div>
 </section>
 
@@ -318,121 +318,121 @@ footer{border-top:1px solid var(--line);background:var(--card);color:var(--muted
 <div><h2 data-i18n="res_title">Resultado estimado</h2><div class="subtitle" id="vehicleName" data-i18n="res_empty">Preencha os dados.</div></div>
 </div>
 <div class="total">
-<small data-i18n="res_lbl">Custo total estimado em Moçambique</small>
+<small data-i18n="res_lbl">Custo total estimado em MoÃ§ambique</small>
 <strong id="totalMzn">0 MT</strong>
-<div class="usd" id="totalUsd">≈ USD 0,00</div>
+<div class="usd" id="totalUsd">â‰ˆ USD 0,00</div>
 </div>
 <div class="bars" id="bars">
-<div class="bar-item"><div class="bar-label"><span data-i18n="b_car">Veículo</span><span id="pctCar">0%</span></div><div class="bar-track"><div class="bar-fill b1" id="barCar" style="width:0%"></div></div></div>
-<div class="bar-item"><div class="bar-label"><span data-i18n="b_log">Logística</span><span id="pctLog">0%</span></div><div class="bar-track"><div class="bar-fill b2" id="barLog" style="width:0%"></div></div></div>
+<div class="bar-item"><div class="bar-label"><span data-i18n="b_car">VeÃ­culo</span><span id="pctCar">0%</span></div><div class="bar-track"><div class="bar-fill b1" id="barCar" style="width:0%"></div></div></div>
+<div class="bar-item"><div class="bar-label"><span data-i18n="b_log">LogÃ­stica</span><span id="pctLog">0%</span></div><div class="bar-track"><div class="bar-fill b2" id="barLog" style="width:0%"></div></div></div>
 <div class="bar-item"><div class="bar-label"><span data-i18n="b_duty">Direitos</span><span id="pctDuty">0%</span></div><div class="bar-track"><div class="bar-fill b3" id="barDuty" style="width:0%"></div></div></div>
 <div class="bar-item"><div class="bar-label"><span data-i18n="b_vat">IVA</span><span id="pctVat">0%</span></div><div class="bar-track"><div class="bar-fill b4" id="barVat" style="width:0%"></div></div></div>
 <div class="bar-item"><div class="bar-label"><span data-i18n="b_oth">Outros</span><span id="pctOth">0%</span></div><div class="bar-track"><div class="bar-fill b5" id="barOth" style="width:0%"></div></div></div>
 </div>
 <div class="breakdown">
-<div class="row"><span data-i18n="r_price">Preço do veículo</span><b id="rPrice">$ 0,00</b></div>
+<div class="row"><span data-i18n="r_price">PreÃ§o do veÃ­culo</span><b id="rPrice">$ 0,00</b></div>
 <div class="row"><span data-i18n="r_log">Frete + seguro</span><b id="rLogistics">$ 0,00</b></div>
 <div class="row"><span data-i18n="r_base">Base estimada</span><b id="rBase">$ 0,00</b></div>
 <div class="row"><span id="dutyLabel" data-i18n="r_duty">Direitos aduaneiros</span><b id="rDuty">$ 0,00</b></div>
 <div class="row"><span data-i18n="r_vat">IVA estimado</span><b id="rVat">$ 0,00</b></div>
 <div class="row"><span data-i18n="r_oth">Outros custos</span><b id="rOther">$ 0,00</b></div>
 <div class="row"><span id="clearanceLabel" data-i18n="r_clear">Desalfandegamento</span><b id="rClearance">0,00 MT</b></div>
-<div class="row"><span data-i18n="r_plate">Chapa de matrícula (par)</span><b id="rPlate">0,00 MT</b></div>
-<div class="row"><span data-i18n="r_radio">Taxa de rádio</span><b id="rRadio">0,00 MT</b></div>
+<div class="row"><span data-i18n="r_plate">Chapa de matrÃ­cula (par)</span><b id="rPlate">0,00 MT</b></div>
+<div class="row"><span data-i18n="r_radio">Taxa de rÃ¡dio</span><b id="rRadio">0,00 MT</b></div>
 <div class="row"><span data-i18n="r_mun">Taxa municipal</span><b id="rMunicipal">0,00 MT</b></div>
 <div class="row"><span data-i18n="r_park">Parqueamento</span><b id="rParking">0,00 MT</b></div>
 <div class="row final"><span data-i18n="r_total">Total estimado</span><b id="rTotal">$ 0,00</b></div>
 </div>
-<div class="note"><b data-i18n="note_b">Importante:</b> <span data-i18n="note_t">esta ferramenta é uma estimativa demonstrativa. Confirme sempre os valores oficiais antes de importar.</span></div>
+<div class="note"><b data-i18n="note_b">Importante:</b> <span data-i18n="note_t">esta ferramenta Ã© uma estimativa demonstrativa. Confirme sempre os valores oficiais antes de importar.</span></div>
 </aside>
 </div>
 </main>
 
 <section class="features container" id="como-funciona">
-<h2 data-i18n="feat_t">Simples, rápido e transparente</h2>
-<p data-i18n="feat_p">Cole um link ou preencha manualmente — nós fazemos as contas.</p>
+<h2 data-i18n="feat_t">Simples, rÃ¡pido e transparente</h2>
+<p data-i18n="feat_p">Cole um link ou preencha manualmente â€” nÃ³s fazemos as contas.</p>
 <div class="feature-grid">
-<article class="feature"><div class="icon">🔗</div><h3 data-i18n="f1_t">Importar por link</h3><p data-i18n="f1_p">Cole o link de um anúncio Beforward, SBT ou outro e preenchemos os campos automaticamente.</p></article>
-<article class="feature"><div class="icon">📊</div><h3 data-i18n="f2_t">Estimativa de custos</h3><p data-i18n="f2_p">Veja os principais componentes do custo de importação organizados num único resumo.</p></article>
-<article class="feature"><div class="icon">🇲🇿</div><h3 data-i18n="f3_t">Preparado para Moçambique</h3><p data-i18n="f3_p">Interface e linguagem adaptadas ao contexto de importação de veículos para Moçambique.</p></article>
+<article class="feature"><div class="icon">ðŸ”—</div><h3 data-i18n="f1_t">Importar por link</h3><p data-i18n="f1_p">Cole o link de um anÃºncio Beforward, SBT ou outro e preenchemos os campos automaticamente.</p></article>
+<article class="feature"><div class="icon">ðŸ“Š</div><h3 data-i18n="f2_t">Estimativa de custos</h3><p data-i18n="f2_p">Veja os principais componentes do custo de importaÃ§Ã£o organizados num Ãºnico resumo.</p></article>
+<article class="feature"><div class="icon">ðŸ‡²ðŸ‡¿</div><h3 data-i18n="f3_t">Preparado para MoÃ§ambique</h3><p data-i18n="f3_p">Interface e linguagem adaptadas ao contexto de importaÃ§Ã£o de veÃ­culos para MoÃ§ambique.</p></article>
 </div>
 </section>
 
 <section class="partners container" id="parceiros">
-  <h2 data-i18n="partners_t">🤝 Parceiros Recomendados</h2>
-  <p data-i18n="partners_p">Agentes aduaneiros, logística, seguros e serviços de importação verificados.</p>
+  <h2 data-i18n="partners_t">ðŸ¤ Parceiros Recomendados</h2>
+  <p data-i18n="partners_p">Agentes aduaneiros, logÃ­stica, seguros e serviÃ§os de importaÃ§Ã£o verificados.</p>
 
   <div class="partners-grid">
     <article class="partner-card">
-      <div class="partner-logo" style="background:linear-gradient(135deg,#0d9488,#0891b2)">🏛️</div>
+      <div class="partner-logo" style="background:linear-gradient(135deg,#0d9488,#0891b2)">ðŸ›ï¸</div>
       <h3>Agente Aduaneiro</h3>
-      <p class="partner-desc" data-i18n="partners_ex1">Desalfandegamento rápido e sem complicações em todo o país.</p>
+      <p class="partner-desc" data-i18n="partners_ex1">Desalfandegamento rÃ¡pido e sem complicaÃ§Ãµes em todo o paÃ­s.</p>
       <div class="partner-meta">
-        <span>📍 Maputo</span>
-        <span>📞 +258 84 XXXXXXX</span>
+        <span>ðŸ“ Maputo</span>
+        <span>ðŸ“ž +258 84 XXXXXXX</span>
       </div>
-      <button class="partner-cta disabled" onclick="showUnavailable('agente')">🔒 Indisponível</button>
+      <button class="partner-cta disabled" onclick="showUnavailable('agente')">ðŸ”’ IndisponÃ­vel</button>
     </article>
 
     <article class="partner-card">
-      <div class="partner-logo" style="background:linear-gradient(135deg,#0891b2,#22d3ee)">🚚</div>
-      <h3>Logística & Transporte</h3>
-      <p class="partner-desc" data-i18n="partners_ex2">Transporte de veículos do porto até à sua porta.</p>
+      <div class="partner-logo" style="background:linear-gradient(135deg,#0891b2,#22d3ee)">ðŸšš</div>
+      <h3>LogÃ­stica & Transporte</h3>
+      <p class="partner-desc" data-i18n="partners_ex2">Transporte de veÃ­culos do porto atÃ© Ã  sua porta.</p>
       <div class="partner-meta">
-        <span>📍 Beira</span>
-        <span>📞 +258 86 XXXXXXX</span>
+        <span>ðŸ“ Beira</span>
+        <span>ðŸ“ž +258 86 XXXXXXX</span>
       </div>
-      <button class="partner-cta disabled" onclick="showUnavailable('logistica')">🔒 Indisponível</button>
+      <button class="partner-cta disabled" onclick="showUnavailable('logistica')">ðŸ”’ IndisponÃ­vel</button>
     </article>
 
     <article class="partner-card">
-      <div class="partner-logo" style="background:linear-gradient(135deg,#14b8a6,#5eead4)">🛡️</div>
+      <div class="partner-logo" style="background:linear-gradient(135deg,#14b8a6,#5eead4)">ðŸ›¡ï¸</div>
       <h3>Seguros Auto</h3>
-      <p class="partner-desc" data-i18n="partners_ex3">Seguro e caução para o seu veículo importado.</p>
+      <p class="partner-desc" data-i18n="partners_ex3">Seguro e cauÃ§Ã£o para o seu veÃ­culo importado.</p>
       <div class="partner-meta">
-        <span>📍 Nampula</span>
-        <span>📞 +258 84 XXXXXXX</span>
+        <span>ðŸ“ Nampula</span>
+        <span>ðŸ“ž +258 84 XXXXXXX</span>
       </div>
-      <button class="partner-cta disabled" onclick="showUnavailable('seguro')">🔒 Indisponível</button>
+      <button class="partner-cta disabled" onclick="showUnavailable('seguro')">ðŸ”’ IndisponÃ­vel</button>
     </article>
   </div>
 </section>
 
 <section class="announce container" id="anuncie">
   <div class="announce-box">
-    <h2 data-i18n="ann_t">📢 Quer aparecer aqui?</h2>
-    <p data-i18n="ann_p">Chegue a <strong>milhares de pessoas</strong> que estão a importar carros para Moçambique. Perfeito para:</p>
+    <h2 data-i18n="ann_t">ðŸ“¢ Quer aparecer aqui?</h2>
+    <p data-i18n="ann_p">Chegue a <strong>milhares de pessoas</strong> que estÃ£o a importar carros para MoÃ§ambique. Perfeito para:</p>
 
     <ul class="announce-list">
-      <li>🏛️ Agentes aduaneiros</li>
-      <li>🚚 Empresas de logística</li>
-      <li>🛡️ Seguradoras</li>
-      <li>🏦 Bancos (financiamento auto)</li>
-      <li>🚗 Stands e vendedores</li>
+      <li>ðŸ›ï¸ Agentes aduaneiros</li>
+      <li>ðŸšš Empresas de logÃ­stica</li>
+      <li>ðŸ›¡ï¸ Seguradoras</li>
+      <li>ðŸ¦ Bancos (financiamento auto)</li>
+      <li>ðŸš— Stands e vendedores</li>
     </ul>
 
     <div class="plans">
       <div class="plan">
-        <div class="plan-name" data-i18n="plan1_n">Básico</div>
-        <div class="plan-price">500 <small>MT/mês</small></div>
+        <div class="plan-name" data-i18n="plan1_n">BÃ¡sico</div>
+        <div class="plan-price">500 <small>MT/mÃªs</small></div>
         <ul><li>Nome + contacto</li><li>Lista de parceiros</li></ul>
       </div>
       <div class="plan featured">
-        <div class="plan-badge">⭐ Popular</div>
+        <div class="plan-badge">â­ Popular</div>
         <div class="plan-name" data-i18n="plan2_n">Destaque</div>
-        <div class="plan-price">1 500 <small>MT/mês</small></div>
-        <ul><li>Card com logo</li><li>Descrição + localização</li><li>Botão WhatsApp direto</li><li>Posição prioritária</li></ul>
+        <div class="plan-price">1 500 <small>MT/mÃªs</small></div>
+        <ul><li>Card com logo</li><li>DescriÃ§Ã£o + localizaÃ§Ã£o</li><li>BotÃ£o WhatsApp direto</li><li>PosiÃ§Ã£o prioritÃ¡ria</li></ul>
       </div>
       <div class="plan">
         <div class="plan-name" data-i18n="plan3_n">Premium</div>
-        <div class="plan-price">3 000 <small>MT/mês</small></div>
-        <ul><li>Tudo do Destaque</li><li>Banner no topo da página</li><li>Visível em todas as visitas</li><li>1 mês grátis de teste</li></ul>
+        <div class="plan-price">3 000 <small>MT/mÃªs</small></div>
+        <ul><li>Tudo do Destaque</li><li>Banner no topo da pÃ¡gina</li><li>VisÃ­vel em todas as visitas</li><li>1 mÃªs grÃ¡tis de teste</li></ul>
       </div>
     </div>
 
     <div class="announce-actions">
-      <a class="btn-whatsapp" href="https://wa.me/258848224704?text=Ol%C3%A1!%20Quero%20anunciar%20no%20Simulador%20MZ." target="_blank" rel="noopener">💬 Quero anunciar</a>
-      <a class="btn-email" href="mailto:amidlapaissone@gmail.com?subject=Quero%20anunciar%20no%20Simulador%20MZ">📧 Enviar email</a>
+      <a class="btn-whatsapp" href="https://wa.me/258848224704?text=Ol%C3%A1!%20Quero%20anunciar%20no%20Simulador%20MZ." target="_blank" rel="noopener">ðŸ’¬ Quero anunciar</a>
+      <a class="btn-email" href="mailto:amidlapaissone@gmail.com?subject=Quero%20anunciar%20no%20Simulador%20MZ">ðŸ“§ Enviar email</a>
     </div>
   </div>
 </section>
@@ -447,23 +447,23 @@ footer{border-top:1px solid var(--line);background:var(--card);color:var(--muted
   <div class="container">
     <div class="footer-grid">
       <div>
-        <div class="footer-brand">🚗 Simulador <span>MZ</span></div>
-        <p class="footer-desc" data-i18n="footer_desc">Ferramenta gratuita de estimativa de custos de importação de veículos para Moçambique.</p>
+        <div class="footer-brand">ðŸš— Simulador <span>MZ</span></div>
+        <p class="footer-desc" data-i18n="footer_desc">Ferramenta gratuita de estimativa de custos de importaÃ§Ã£o de veÃ­culos para MoÃ§ambique.</p>
       </div>
       <div>
         <h4 data-i18n="footer_contact">Contactos</h4>
-        <p>📱 <a href="https://wa.me/258848224704" target="_blank">+258 84 822 4704</a></p>
-        <p>📱 <a href="https://wa.me/258860092817" target="_blank">+258 86 009 2817</a></p>
-        <p>📧 <a href="mailto:amidlapaissone@gmail.com">amidlapaissone@gmail.com</a></p>
+        <p>ðŸ“± <a href="https://wa.me/258848224704" target="_blank">+258 84 822 4704</a></p>
+        <p>ðŸ“± <a href="https://wa.me/258860092817" target="_blank">+258 86 009 2817</a></p>
+        <p>ðŸ“§ <a href="mailto:amidlapaissone@gmail.com">amidlapaissone@gmail.com</a></p>
       </div>
       <div>
-        <h4 data-i18n="footer_links">Ligações</h4>
+        <h4 data-i18n="footer_links">LigaÃ§Ãµes</h4>
         <p><a href="#simulador" data-i18n="nav_sim">Simulador</a></p>
         <p><a href="#parceiros" data-i18n="footer_partners">Parceiros</a></p>
         <p><a href="#anuncie" data-i18n="footer_announce">Anuncie aqui</a></p>
       </div>
     </div>
-    <div class="footer-bottom" data-i18n="footer">© 2026 Simulador MZ · Ferramenta de estimativa · Os resultados não substituem uma avaliação oficial.</div>
+    <div class="footer-bottom" data-i18n="footer">Â© 2026 Simulador MZ Â· Ferramenta de estimativa Â· Os resultados nÃ£o substituem uma avaliaÃ§Ã£o oficial.</div>
   </div>
 </footer>
 <script>
@@ -477,7 +477,7 @@ const PORTS = {
   maputo:    {pt:'Porto de Maputo',           en:'Port of Maputo',           factor:1.00, prov:'Maputo'},
   beira:     {pt:'Porto da Beira',            en:'Port of Beira',            factor:1.05, prov:'Sofala'},
   nacala:    {pt:'Porto de Nacala',           en:'Port of Nacala',           factor:1.08, prov:'Nampula'},
-  quelimane: {pt:'Porto de Quelimane',        en:'Port of Quelimane',        factor:1.10, prov:'Zambézia'},
+  quelimane: {pt:'Porto de Quelimane',        en:'Port of Quelimane',        factor:1.10, prov:'ZambÃ©zia'},
   pemba:     {pt:'Porto de Pemba',            en:'Port of Pemba',            factor:1.12, prov:'Cabo Delgado'},
   ressano:   {pt:'Fronteira Ressano Garcia',  en:'Ressano Garcia Border',    factor:0.90, prov:'Maputo (SA)'},
   machipanda:{pt:'Fronteira de Machipanda',   en:'Machipanda Border',        factor:0.95, prov:'Manica (ZW)'},
@@ -512,7 +512,7 @@ function updatePortOptions(lang){
 
 function applyTheme(t){
   document.documentElement.classList.toggle('dark', t==='dark');
-  $('themeBtn').textContent = t==='dark' ? '☀️' : '🌙';
+  $('themeBtn').textContent = t==='dark' ? 'â˜€ï¸' : 'ðŸŒ™';
   localStorage.setItem('theme', t);
 }
 applyTheme(localStorage.getItem('theme') || 'light');
@@ -529,7 +529,7 @@ function showDisclaimer(){
   const msgs = {
     pt: {
       titulo: 'Importante',
-      texto: 'Esta ferramenta é uma <strong>estimativa demonstrativa</strong>. Os valores calculados podem variar. Confirme sempre os valores oficiais antes de importar.',
+      texto: 'Esta ferramenta Ã© uma <strong>estimativa demonstrativa</strong>. Os valores calculados podem variar. Confirme sempre os valores oficiais antes de importar.',
       cta: 'Entendi'
     },
     en: {
@@ -544,7 +544,7 @@ function showDisclaimer(){
   overlay.className = 'disclaimer-overlay';
   overlay.innerHTML = `
     <div class="disclaimer-box">
-      <div class="disclaimer-icon">⚠️</div>
+      <div class="disclaimer-icon">âš ï¸</div>
       <h3>${t.titulo}</h3>
       <p>${t.texto}</p>
       <div class="disclaimer-actions">
@@ -557,14 +557,14 @@ function showDisclaimer(){
   overlay.addEventListener('click', e => { if(e.target === overlay) overlay.remove(); });
 }
 
-// ============ AVISO DE PARCEIRO INDISPONÍVEL ============
+// ============ AVISO DE PARCEIRO INDISPONÃVEL ============
 function showUnavailable(tipo){
   const lang = localStorage.getItem('lang') || 'pt';
   const msgs = {
     pt: {
-      agente: 'Sem agente aduaneiro parceiro disponível neste momento.',
-      logistica: 'Sem empresa de logística parceira disponível neste momento.',
-      seguro: 'Sem seguradora parceira disponível neste momento.',
+      agente: 'Sem agente aduaneiro parceiro disponÃ­vel neste momento.',
+      logistica: 'Sem empresa de logÃ­stica parceira disponÃ­vel neste momento.',
+      seguro: 'Sem seguradora parceira disponÃ­vel neste momento.',
       subtitulo: 'Quer anunciar aqui? Fale connosco no WhatsApp.',
       cta: 'Saber como anunciar',
       close: 'Fechar'
@@ -580,17 +580,17 @@ function showUnavailable(tipo){
   };
   const t = msgs[lang] || msgs.pt;
   const mensagem = t[tipo] || t.agente;
-  const waText = lang==='en' ? "Hello! I want to advertise on Simulador MZ." : "Olá! Quero anunciar no Simulador MZ.";
+  const waText = lang==='en' ? "Hello! I want to advertise on Simulador MZ." : "OlÃ¡! Quero anunciar no Simulador MZ.";
 
   const overlay = document.createElement('div');
   overlay.className = 'unavailable-overlay';
   overlay.innerHTML = `
     <div class="unavailable-box">
-      <div class="unavailable-emoji">🔒</div>
+      <div class="unavailable-emoji">ðŸ”’</div>
       <h3>${mensagem}</h3>
       <p>${t.subtitulo}</p>
       <div class="unavailable-actions">
-        <a href="https://wa.me/258848224704?text=${encodeURIComponent(waText)}" target="_blank" rel="noopener" class="btn-whatsapp">💬 ${t.cta}</a>
+        <a href="https://wa.me/258848224704?text=${encodeURIComponent(waText)}" target="_blank" rel="noopener" class="btn-whatsapp">ðŸ’¬ ${t.cta}</a>
         <button class="btn-close">${t.close}</button>
       </div>
     </div>
@@ -646,9 +646,9 @@ function calculate(){
   const portName = lang==='en' ? portData.en : portData.pt;
   if($('clearanceLabel')) $('clearanceLabel').textContent = 'Desalfandegamento (' + portName + ')';
   const brand = $('brand').value.trim(), model = $('model').value.trim();
-  $('vehicleName').textContent = (brand||'—') + ' ' + (model||'') + (year ? ' · ' + year : '');
+  $('vehicleName').textContent = (brand||'â€”') + ' ' + (model||'') + (year ? ' Â· ' + year : '');
   $('totalMzn').textContent = fmt(total*rate) + ' MT';
-  $('totalUsd').textContent = '≈ USD ' + fmt(total);
+  $('totalUsd').textContent = 'â‰ˆ USD ' + fmt(total);
 
   const dual = usd => fmt(usd*rate) + ' MT <span style="color:var(--muted);font-weight:500;font-size:11px"> / $ ' + fmt(usd) + '</span>';
   $('rPrice').innerHTML      = dual(priceUSD);
@@ -697,11 +697,11 @@ async function importFromUrl(){
   status.className = 'import-status show';
   if(!/^https?:\/\/.+/i.test(url)){
     status.classList.add('error');
-    status.textContent = 'Por favor, cole um link válido.';
+    status.textContent = 'Por favor, cole um link vÃ¡lido.';
     return;
   }
   status.classList.remove('error','success');
-  status.textContent = '⏳ A obter dados do anúncio...';
+  status.textContent = 'â³ A obter dados do anÃºncio...';
   btn.disabled = true;
   try{
     const res = await fetch(API_SCRAPE, {
@@ -723,16 +723,16 @@ async function importFromUrl(){
     if(data.image){
       $('previewImg').src = data.image;
       $('previewTitle').textContent = [data.brand,data.model,data.year].filter(Boolean).join(' ');
-      $('previewMeta').textContent = [data.cc?data.cc+' cc':null, data.fuel, data.price?data.currency+' '+data.price:null].filter(Boolean).join(' · ');
+      $('previewMeta').textContent = [data.cc?data.cc+' cc':null, data.fuel, data.price?data.currency+' '+data.price:null].filter(Boolean).join(' Â· ');
       $('importPreview').classList.add('show');
     }
     status.classList.add('success');
-    status.textContent = '✅ Dados importados com sucesso!';
+    status.textContent = 'âœ… Dados importados com sucesso!';
     calculate();
   } catch(err){
     console.error(err);
     status.classList.add('error');
-    status.textContent = '❌ Não foi possível obter dados. Preencha manualmente.';
+    status.textContent = 'âŒ NÃ£o foi possÃ­vel obter dados. Preencha manualmente.';
   } finally { btn.disabled = false; }
 }
 $('importBtn').addEventListener('click', importFromUrl);
@@ -741,76 +741,76 @@ $('importUrl').addEventListener('keydown', e => {if(e.key==='Enter'){e.preventDe
 const I18N = {
   pt:{
     nav_sim:'Simulador',nav_how:'Como funciona',nav_cta:'Simular agora',
-    badge:'🇲🇿 Feito para importações em Moçambique',
+    badge:'ðŸ‡²ðŸ‡¿ Feito para importaÃ§Ãµes em MoÃ§ambique',
     hero_h1a:'Quanto vai custar',hero_h1b:'importar o seu carro',
-    hero_p:'Cole o link do anúncio (Beforward, SBT, etc.) e obtenha uma estimativa instantânea dos custos de importação para Moçambique.',
-    p1:'✓ Importar por link',p2:'✓ Valores em MT e USD',p3:'✓ Funciona no telemóvel',
-    form_title:'Dados do veículo',form_sub:'Cole um link ou preencha manualmente.',step:'SIMULAÇÃO',
-    sec_vehicle:'Dados do veículo',sec_costs:'Custos de importação',
-    sec_port:'Porto e logística',sec_local:'Custos locais (Moçambique)',
-    import_lbl:'🔗 Importar dados do anúncio',import_btn:'Buscar dados',
+    hero_p:'Cole o link do anÃºncio (Beforward, SBT, etc.) e obtenha uma estimativa instantÃ¢nea dos custos de importaÃ§Ã£o para MoÃ§ambique.',
+    p1:'âœ“ Importar por link',p2:'âœ“ Valores em MT e USD',p3:'âœ“ Funciona no telemÃ³vel',
+    form_title:'Dados do veÃ­culo',form_sub:'Cole um link ou preencha manualmente.',step:'SIMULAÃ‡ÃƒO',
+    sec_vehicle:'Dados do veÃ­culo',sec_costs:'Custos de importaÃ§Ã£o',
+    sec_port:'Porto e logÃ­stica',sec_local:'Custos locais (MoÃ§ambique)',
+    import_lbl:'ðŸ”— Importar dados do anÃºncio',import_btn:'Buscar dados',
     lbl_brand:'Marca',lbl_model:'Modelo',lbl_year:'Ano de fabrico',lbl_cc:'Cilindrada (cc)',
-    lbl_fuel:'Combustível',lbl_type:'Tipo de veículo',lbl_country:'País de origem',
-    lbl_price:'Preço de compra',lbl_cur:'Moeda do preço',lbl_freight:'Frete (USD)',
+    lbl_fuel:'CombustÃ­vel',lbl_type:'Tipo de veÃ­culo',lbl_country:'PaÃ­s de origem',
+    lbl_price:'PreÃ§o de compra',lbl_cur:'Moeda do preÃ§o',lbl_freight:'Frete (USD)',
     lbl_ins:'Seguro (USD)',lbl_other:'Outros custos (USD)',
-    lbl_port:'🚢 Porto / fronteira de entrada',
-    lbl_port_help:'Escolha por onde vai entrar o veículo em Moçambique.',
-    lbl_rate:'Taxa USD → MZN',lbl_rate_help:'Pode alterar esta taxa conforme a cotação.',
-    lbl_clear:'Desalfandegamento (MT)',lbl_plate:'Chapa de matrícula (par) — MT',
-    lbl_radio:'Taxa de rádio (MT/ano)',lbl_mun:'Taxa municipal (MT/ano)',
-    lbl_park:'Parqueamento (MT/mês)',lbl_months:'Meses de parqueamento',
-    f_gas:'Gasolina',f_die:'Diesel',f_hyb:'Híbrido',f_ele:'Elétrico',
+    lbl_port:'ðŸš¢ Porto / fronteira de entrada',
+    lbl_port_help:'Escolha por onde vai entrar o veÃ­culo em MoÃ§ambique.',
+    lbl_rate:'Taxa USD â†’ MZN',lbl_rate_help:'Pode alterar esta taxa conforme a cotaÃ§Ã£o.',
+    lbl_clear:'Desalfandegamento (MT)',lbl_plate:'Chapa de matrÃ­cula (par) â€” MT',
+    lbl_radio:'Taxa de rÃ¡dio (MT/ano)',lbl_mun:'Taxa municipal (MT/ano)',
+    lbl_park:'Parqueamento (MT/mÃªs)',lbl_months:'Meses de parqueamento',
+    f_gas:'Gasolina',f_die:'Diesel',f_hyb:'HÃ­brido',f_ele:'ElÃ©trico',
     t_lig:'Ligeiro',t_pic:'Pickup',t_suv:'SUV',t_car:'Carrinha',t_mot:'Motociclo',
-    c_za:'África do Sul',c_jp:'Japão',c_ae:'Emirados Árabes Unidos',c_uk:'Reino Unido',c_ot:'Outro',
-    btn_calc:'Calcular custo estimado',btn_new:'↺ Nova simulação',btn_print:'▣ Imprimir',btn_pdf:'📄 PDF',btn_share:'📱 Partilhar',
+    c_za:'Ãfrica do Sul',c_jp:'JapÃ£o',c_ae:'Emirados Ãrabes Unidos',c_uk:'Reino Unido',c_ot:'Outro',
+    btn_calc:'Calcular custo estimado',btn_new:'â†º Nova simulaÃ§Ã£o',btn_print:'â–£ Imprimir',btn_pdf:'ðŸ“„ PDF',btn_share:'ðŸ“± Partilhar',
     res_title:'Resultado estimado',res_empty:'Preencha os dados.',
-    res_lbl:'Custo total estimado em Moçambique',
-    b_car:'Veículo',b_log:'Logística',b_duty:'Direitos',b_vat:'IVA',b_oth:'Outros',
-    r_price:'Preço do veículo',r_log:'Frete + seguro',r_base:'Base estimada',
+    res_lbl:'Custo total estimado em MoÃ§ambique',
+    b_car:'VeÃ­culo',b_log:'LogÃ­stica',b_duty:'Direitos',b_vat:'IVA',b_oth:'Outros',
+    r_price:'PreÃ§o do veÃ­culo',r_log:'Frete + seguro',r_base:'Base estimada',
     r_duty:'Direitos aduaneiros',r_vat:'IVA estimado',r_oth:'Outros custos',
-    r_clear:'Desalfandegamento',r_plate:'Chapa de matrícula (par)',r_radio:'Taxa de rádio',
+    r_clear:'Desalfandegamento',r_plate:'Chapa de matrÃ­cula (par)',r_radio:'Taxa de rÃ¡dio',
     r_mun:'Taxa municipal',r_park:'Parqueamento',r_total:'Total estimado',
-    note_b:'Importante:',note_t:'esta ferramenta é uma estimativa demonstrativa. Confirme sempre os valores oficiais antes de importar.',
-    feat_t:'Simples, rápido e transparente',feat_p:'Cole um link ou preencha manualmente — nós fazemos as contas.',
-    f1_t:'Importar por link',f1_p:'Cole o link de um anúncio Beforward, SBT ou outro e preenchemos os campos automaticamente.',
-    f2_t:'Estimativa de custos',f2_p:'Veja os principais componentes do custo de importação organizados num único resumo.',
-    f3_t:'Preparado para Moçambique',f3_p:'Interface e linguagem adaptadas ao contexto de importação de veículos para Moçambique.',
-    footer:'© 2026 Simulador MZ · Ferramenta de estimativa · Os resultados não substituem uma avaliação oficial.',
-    footer_desc:'Ferramenta gratuita de estimativa de custos de importação de veículos para Moçambique.',
-    footer_contact:'Contactos',footer_links:'Ligações',footer_partners:'Parceiros',footer_announce:'Anuncie aqui',
-    partners_t:'🤝 Parceiros Recomendados',
-    partners_p:'Agentes aduaneiros, logística, seguros e serviços de importação verificados.',
-    partners_ex1:'Desalfandegamento rápido e sem complicações em todo o país.',
-    partners_ex2:'Transporte de veículos do porto até à sua porta.',
-    partners_ex3:'Seguro e caução para o seu veículo importado.',
-    ann_t:'📢 Quer aparecer aqui?',
-    ann_p:'Chegue a milhares de pessoas que estão a importar carros para Moçambique. Perfeito para:',
-    plan1_n:'Básico',plan2_n:'Destaque',plan3_n:'Premium'
+    note_b:'Importante:',note_t:'esta ferramenta Ã© uma estimativa demonstrativa. Confirme sempre os valores oficiais antes de importar.',
+    feat_t:'Simples, rÃ¡pido e transparente',feat_p:'Cole um link ou preencha manualmente â€” nÃ³s fazemos as contas.',
+    f1_t:'Importar por link',f1_p:'Cole o link de um anÃºncio Beforward, SBT ou outro e preenchemos os campos automaticamente.',
+    f2_t:'Estimativa de custos',f2_p:'Veja os principais componentes do custo de importaÃ§Ã£o organizados num Ãºnico resumo.',
+    f3_t:'Preparado para MoÃ§ambique',f3_p:'Interface e linguagem adaptadas ao contexto de importaÃ§Ã£o de veÃ­culos para MoÃ§ambique.',
+    footer:'Â© 2026 Simulador MZ Â· Ferramenta de estimativa Â· Os resultados nÃ£o substituem uma avaliaÃ§Ã£o oficial.',
+    footer_desc:'Ferramenta gratuita de estimativa de custos de importaÃ§Ã£o de veÃ­culos para MoÃ§ambique.',
+    footer_contact:'Contactos',footer_links:'LigaÃ§Ãµes',footer_partners:'Parceiros',footer_announce:'Anuncie aqui',
+    partners_t:'ðŸ¤ Parceiros Recomendados',
+    partners_p:'Agentes aduaneiros, logÃ­stica, seguros e serviÃ§os de importaÃ§Ã£o verificados.',
+    partners_ex1:'Desalfandegamento rÃ¡pido e sem complicaÃ§Ãµes em todo o paÃ­s.',
+    partners_ex2:'Transporte de veÃ­culos do porto atÃ© Ã  sua porta.',
+    partners_ex3:'Seguro e cauÃ§Ã£o para o seu veÃ­culo importado.',
+    ann_t:'ðŸ“¢ Quer aparecer aqui?',
+    ann_p:'Chegue a milhares de pessoas que estÃ£o a importar carros para MoÃ§ambique. Perfeito para:',
+    plan1_n:'BÃ¡sico',plan2_n:'Destaque',plan3_n:'Premium'
   },
   en:{
     nav_sim:'Simulator',nav_how:'How it works',nav_cta:'Simulate now',
-    badge:'🇲🇿 Built for imports into Mozambique',
+    badge:'ðŸ‡²ðŸ‡¿ Built for imports into Mozambique',
     hero_h1a:'How much will it cost to',hero_h1b:'import your car',
     hero_p:'Paste the listing link (Beforward, SBT, etc.) and get an instant estimate of import costs to Mozambique.',
-    p1:'✓ Import via link',p2:'✓ MZN and USD values',p3:'✓ Works on mobile',
+    p1:'âœ“ Import via link',p2:'âœ“ MZN and USD values',p3:'âœ“ Works on mobile',
     form_title:'Vehicle details',form_sub:'Paste a link or fill manually.',step:'SIMULATION',
     sec_vehicle:'Vehicle details',sec_costs:'Import costs',
     sec_port:'Port & logistics',sec_local:'Local costs (Mozambique)',
-    import_lbl:'🔗 Import listing data',import_btn:'Fetch data',
+    import_lbl:'ðŸ”— Import listing data',import_btn:'Fetch data',
     lbl_brand:'Brand',lbl_model:'Model',lbl_year:'Year',lbl_cc:'Engine (cc)',
     lbl_fuel:'Fuel',lbl_type:'Vehicle type',lbl_country:'Country of origin',
     lbl_price:'Purchase price',lbl_cur:'Price currency',lbl_freight:'Freight (USD)',
     lbl_ins:'Insurance (USD)',lbl_other:'Other costs (USD)',
-    lbl_port:'🚢 Port / entry border',
+    lbl_port:'ðŸš¢ Port / entry border',
     lbl_port_help:'Choose where the vehicle will enter Mozambique.',
-    lbl_rate:'USD → MZN exchange rate',lbl_rate_help:'You can adjust this rate.',
-    lbl_clear:'Customs clearance (MT)',lbl_plate:'License plate (pair) — MT',
+    lbl_rate:'USD â†’ MZN exchange rate',lbl_rate_help:'You can adjust this rate.',
+    lbl_clear:'Customs clearance (MT)',lbl_plate:'License plate (pair) â€” MT',
     lbl_radio:'Radio fee (MT/year)',lbl_mun:'Municipal fee (MT/year)',
     lbl_park:'Parking (MT/month)',lbl_months:'Parking months',
     f_gas:'Petrol',f_die:'Diesel',f_hyb:'Hybrid',f_ele:'Electric',
     t_lig:'Light',t_pic:'Pickup',t_suv:'SUV',t_car:'Van',t_mot:'Motorcycle',
     c_za:'South Africa',c_jp:'Japan',c_ae:'United Arab Emirates',c_uk:'United Kingdom',c_ot:'Other',
-    btn_calc:'Calculate estimated cost',btn_new:'↺ New simulation',btn_print:'▣ Print',btn_pdf:'📄 PDF',btn_share:'📱 Share',
+    btn_calc:'Calculate estimated cost',btn_new:'â†º New simulation',btn_print:'â–£ Print',btn_pdf:'ðŸ“„ PDF',btn_share:'ðŸ“± Share',
     res_title:'Estimated result',res_empty:'Fill in the vehicle data.',
     res_lbl:'Total estimated cost in Mozambique',
     b_car:'Vehicle',b_log:'Logistics',b_duty:'Duties',b_vat:'VAT',b_oth:'Other',
@@ -819,19 +819,19 @@ const I18N = {
     r_clear:'Customs clearance',r_plate:'License plate (pair)',r_radio:'Radio fee',
     r_mun:'Municipal fee',r_park:'Parking',r_total:'Estimated total',
     note_b:'Important:',note_t:'this tool is a demo estimate. Always confirm official values before importing.',
-    feat_t:'Simple, fast and transparent',feat_p:'Paste a link or fill manually — we do the math.',
+    feat_t:'Simple, fast and transparent',feat_p:'Paste a link or fill manually â€” we do the math.',
     f1_t:'Import via link',f1_p:'Paste a Beforward, SBT or other listing link and we fill the fields automatically.',
     f2_t:'Cost estimate',f2_p:'See the main import cost components organised in a single summary.',
     f3_t:'Built for Mozambique',f3_p:'Interface and language adapted to vehicle imports into Mozambique.',
-    footer:'© 2026 Simulador MZ · Estimation tool · Results do not replace an official assessment.',
+    footer:'Â© 2026 Simulador MZ Â· Estimation tool Â· Results do not replace an official assessment.',
     footer_desc:'Free tool to estimate vehicle import costs to Mozambique.',
     footer_contact:'Contacts',footer_links:'Links',footer_partners:'Partners',footer_announce:'Advertise here',
-    partners_t:'🤝 Recommended Partners',
+    partners_t:'ðŸ¤ Recommended Partners',
     partners_p:'Verified customs agents, logistics, insurance and import services.',
     partners_ex1:'Fast and hassle-free customs clearance nationwide.',
     partners_ex2:'Vehicle transport from port to your door.',
     partners_ex3:'Insurance and guarantee for your imported vehicle.',
-    ann_t:'📢 Want to appear here?',
+    ann_t:'ðŸ“¢ Want to appear here?',
     ann_p:'Reach thousands of people importing cars to Mozambique. Perfect for:',
     plan1_n:'Basic',plan2_n:'Featured',plan3_n:'Premium'
   }
@@ -859,7 +859,7 @@ document.querySelectorAll('.lang-switch button').forEach(b=>{
 
 function shareWhatsApp(){
   const lang = localStorage.getItem('lang') || 'pt';
-  const brand = $('brand').value.trim() || '—';
+  const brand = $('brand').value.trim() || 'â€”';
   const model = $('model').value.trim() || '';
   const year = $('year').value || '';
   const portKey = $('port') ? $('port').value : 'maputo';
@@ -880,39 +880,39 @@ function shareWhatsApp(){
 
   let msg = '';
   if(lang === 'en'){
-    msg += '🚗 *Vehicle Import Simulation*\n\n';
-    msg += '*Vehicle:* ' + brand + ' ' + model + (year ? ' · ' + year : '') + '\n';
+    msg += 'ðŸš— *Vehicle Import Simulation*\n\n';
+    msg += '*Vehicle:* ' + brand + ' ' + model + (year ? ' Â· ' + year : '') + '\n';
     msg += '*Port:* ' + portName + '\n';
     msg += '*Country of origin:* ' + country + '\n\n';
     msg += '*Total estimated cost:*\n' + totalMT + '\n' + totalUSD + '\n\n';
     msg += '*Breakdown:*\n';
-    msg += '• Vehicle: ' + price + '\n';
-    msg += '• Customs duty: ' + duty + '\n';
-    msg += '• VAT: ' + vat + '\n';
-    msg += '• Clearance: ' + clearance + '\n';
-    msg += '• Plate: ' + plate + '\n';
-    msg += '• Radio: ' + radio + '\n';
-    msg += '• Municipal: ' + municipal + '\n';
-    msg += '• Parking: ' + parking + '\n';
-    msg += '• Other: ' + others + '\n\n';
-    msg += '📊 Simulated at Simulador MZ';
+    msg += 'â€¢ Vehicle: ' + price + '\n';
+    msg += 'â€¢ Customs duty: ' + duty + '\n';
+    msg += 'â€¢ VAT: ' + vat + '\n';
+    msg += 'â€¢ Clearance: ' + clearance + '\n';
+    msg += 'â€¢ Plate: ' + plate + '\n';
+    msg += 'â€¢ Radio: ' + radio + '\n';
+    msg += 'â€¢ Municipal: ' + municipal + '\n';
+    msg += 'â€¢ Parking: ' + parking + '\n';
+    msg += 'â€¢ Other: ' + others + '\n\n';
+    msg += 'ðŸ“Š Simulated at Simulador MZ';
   } else {
-    msg += '🚗 *Simulação de Importação*\n\n';
-    msg += '*Veículo:* ' + brand + ' ' + model + (year ? ' · ' + year : '') + '\n';
+    msg += 'ðŸš— *SimulaÃ§Ã£o de ImportaÃ§Ã£o*\n\n';
+    msg += '*VeÃ­culo:* ' + brand + ' ' + model + (year ? ' Â· ' + year : '') + '\n';
     msg += '*Porto:* ' + portName + '\n';
-    msg += '*País de origem:* ' + country + '\n\n';
+    msg += '*PaÃ­s de origem:* ' + country + '\n\n';
     msg += '*Custo total estimado:*\n' + totalMT + '\n' + totalUSD + '\n\n';
-    msg += '*Composição:*\n';
-    msg += '• Veículo: ' + price + '\n';
-    msg += '• Direitos aduaneiros: ' + duty + '\n';
-    msg += '• IVA: ' + vat + '\n';
-    msg += '• Desalfandegamento: ' + clearance + '\n';
-    msg += '• Chapa: ' + plate + '\n';
-    msg += '• Rádio: ' + radio + '\n';
-    msg += '• Municipal: ' + municipal + '\n';
-    msg += '• Parqueamento: ' + parking + '\n';
-    msg += '• Outros: ' + others + '\n\n';
-    msg += '📊 Simulado no Simulador MZ';
+    msg += '*ComposiÃ§Ã£o:*\n';
+    msg += 'â€¢ VeÃ­culo: ' + price + '\n';
+    msg += 'â€¢ Direitos aduaneiros: ' + duty + '\n';
+    msg += 'â€¢ IVA: ' + vat + '\n';
+    msg += 'â€¢ Desalfandegamento: ' + clearance + '\n';
+    msg += 'â€¢ Chapa: ' + plate + '\n';
+    msg += 'â€¢ RÃ¡dio: ' + radio + '\n';
+    msg += 'â€¢ Municipal: ' + municipal + '\n';
+    msg += 'â€¢ Parqueamento: ' + parking + '\n';
+    msg += 'â€¢ Outros: ' + others + '\n\n';
+    msg += 'ðŸ“Š Simulado no Simulador MZ';
   }
   const url = 'https://wa.me/?text=' + encodeURIComponent(msg);
   window.open(url, '_blank');
@@ -935,7 +935,7 @@ async function exportPDF(){
   doc.text('Veiculo: ' + ($('brand').value||'-') + ' ' + ($('model').value||''), 14, y); y+=8;
   doc.text('Ano: ' + $('year').value, 14, y); y+=8;
   const portKey = $('port') ? $('port').value : 'maputo';
-  const portName = PORTS[portKey] ? PORTS[portKey].pt : '—';
+  const portName = PORTS[portKey] ? PORTS[portKey].pt : 'â€”';
   doc.text('Porto: ' + portName, 14, y); y+=8;
   doc.text('Preco: ' + $('rPrice').textContent.replace(/\s+/g,' '), 14, y); y+=8;
   doc.text('Direitos: ' + $('rDuty').textContent.replace(/\s+/g,' '), 14, y); y+=8;
